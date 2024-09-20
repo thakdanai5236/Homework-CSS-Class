@@ -1,0 +1,155 @@
+body {
+     margin: 0;
+     font-family: sans-serif;
+}
+
+nav {
+  background-color: #3bbdf9; /* สีเหลือง */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  background-image: url('Logotipo De Monograma C & S.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%; /* ทำให้โลโก้เป็นวงกลม */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.actions a {
+  color: #333;
+  font-weight: bold;
+}
+  
+.divider {
+    height: 20px;
+    width: 1px;
+    background-color: #ccc; /* สีของเส้นแบ่ง */
+    margin: 0 10px; /* ปรับระยะห่างของเส้น */
+}
+  
+.actions a:last-child {
+    margin-left: 10px;
+}
+
+/* Main Header Section */
+.main-header {
+    text-align: center;
+    padding: 30px 20px;
+    background-image: url('images/401d45270dd56a7b56d84b27ca73ea79.png');
+    background-size: cover; /* ทำให้รูปภาพครอบคลุมพื้นที่ทั้งหมด */
+    background-position: center; /* จัดรูปภาพให้อยู่ตรงกลาง */
+}
+
+.main-header h1 {
+  font-size: 3.5rem; /* ปรับขนาดตัวอักษรให้ใหญ่ */
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #333;
+  margin-bottom: center;
+}
+
+.main-header img {
+  width: 120px;
+  height: auto;
+  margin-bottom: 2rem;
+  border-radius: 50%; /* ถ้ามีรูปใน header ที่เป็นวงกลม */
+}
+
+.scroll-button {
+  margin-top: 20px;
+}
+
+.scroll-button button {
+  padding: 10px 30px;
+  background-color: #333;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.inline-image {
+    width: 50px; /* Set the width of the image */
+    height: auto; /* Ensure the height is adjusted proportionally */
+    vertical-align: middle; /* Align the image with the text */
+    margin: 0 10px; /* Add some space around the image */
+    /*border-radius: 15px; /* Optionally, round the corners of the image */
+}
+
+.scroll-button button:hover {
+  background-color: #555; /* เปลี่ยนสีปุ่มเมื่อ hover */
+}
+
+/* Image Grid Section */
+.image-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px 20px;
+    background-color: #ececec; /* สีพื้นหลังที่คล้ายภาพ */
+}
+  
+.image-card {
+    flex: 1;
+    max-width: 240px;
+    text-align: center;
+}
+  
+.image-card img {
+    width: 100%;
+    height: 300px; /* Set a fixed height for the images */
+    object-fit: cover; /* Ensures the image fits the container while maintaining aspect ratio */
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+  
+.image-card img:hover {
+    transform: scale(1.05); /* ขยายรูปเมื่อ hover */
+}
+  
+.image-card h3 {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: bold;
+}
+
+/* Footer or Additional Content (ถ้ามี) */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 50px;
+}
